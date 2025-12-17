@@ -26,7 +26,19 @@ Then, simply run the code. After approximately 10 seconds, the code will output:
 - A graph of the residuals of each fit.
 
 ### Code Explanation
-Here I will explain how the code processes data.
+The code loops over the materials and the concentrations for each material. For some pair of material and concentration:
+- The code reads the measurment data from the correct sheet in the material's file.
+- The code integrates the intensity over the wavelength, and normalizes by the exposure time.
+- The code calculates a moving average of the intensity.
+- The code integrates the absolute value of the difference between the intensity and the smoothed intensity, to calculate the fluctuation error. (The integral is also normalized by the exposure time and another constant).
+- The code saves the integrated intensities and errors.
+
+The code also calculates the background intensity by the same method.
+
+Then, for each material:
+- The code subtracts the background intensity from the intensities calculated.
+- The code plots the points on a graph, as error bars.
+- The code fits the points to the function $y=A\left(e^{-Bx}-e^{-Cx}\right)$
 
 ## code_part2.m
 The file "code_part2.m" is a MATLAB file containing the code for processing data from the second part of the experiment, where intensity is compared across the length of the flask.
