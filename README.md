@@ -37,8 +37,12 @@ The code also calculates the background intensity by the same method.
 
 Then, for each material:
 - The code subtracts the background intensity from the intensities calculated.
-- The code plots the points on a graph, as error bars.
-- The code fits the points to the function $y=A\left(e^{-Bx}-e^{-Cx}\right)$
+- The code plots the points on graph 1, as error bars.
+- The code fits the points to the function $y=A\left(e^{-Bx}-e^{-Cx}\right)$, and plots the fit on graph 1.
+- The code calculates chi squared reduced, and prints it and the fit parameters.
+- The code calculates residuals and plots them on graph 2.
+
+Finally, the code displays both graphs.
 
 ## code_part2.m
 The file "code_part2.m" is a MATLAB file containing the code for processing data from the second part of the experiment, where intensity is compared across the length of the flask.
