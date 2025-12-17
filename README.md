@@ -62,4 +62,9 @@ For each image:
 - Repeat for the next image.
 
 ### Code Explanation
-Here I will explain how the code processes data.
+The first code group simply reads the chosen file, and displays the red, green and blue intensities for each pixel on three seperate images.
+
+Then in second code group:
+- The code opens the image from the color selected by the user, and waits for them to click twice.
+- The code reads the intensity along the horizontal line $\left(x_{1},y_{1}\right)\to\left(x_{2},y_{1}\right)$ (the second $y_{1}$ is not a mistake, the code needs a horizontal line).
+- The code plots the logarithm of the intensity vs. the position, assuming the length marked by the user is $10cm$.
