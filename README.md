@@ -36,14 +36,14 @@ Put the file in the same folder as the images to be processed.
   It is heavily recommended (but not technically required) that the images from each material will have very similar file names such as "FL (1)", "FL (2)" etc.
 
 For each image:
-  Change the file name in the first code line to the name of the image file.
-  Run the first code group (everything before "C = _;") in the command window. Three images will open, showing the intensities of different colors (order is RGB).
-  Look over the images and choose what color to use.
-  Change the "C = _;" line to assign C the color you chose.
-  Run the second code group (everything from "C = _;"). The image you chose will open.
-  Click on the two points in the image you want to use for the graph. The graph will be automatically created.
-  Save the graph.
-  Repeat for the next image.
+- Change the file name in the first code line to the name of the image file.
+- Run the first code group (everything before "C = _;") in the command window. Three images will open, showing the intensities of different colors (order is RGB).
+- Look over the images and choose what color to use.
+- Change the "C = _;" line to assign C the color you chose.
+- Run the second code group (everything from "C = _;"). The image you chose will open.
+- Click on the two points in the image you want to use for the graph. The graph will be automatically created.
+- Save the graph.
+- Repeat for the next image.
 
 ### Code Explanation
 Here I will explain how the code processes data.
