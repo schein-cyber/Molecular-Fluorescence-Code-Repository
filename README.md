@@ -8,20 +8,22 @@ The file "code_part1.ipynb" is an iPythonNotebook (JupyterNotebook) file contain
 
 ### Usuage Instructions
 The code expects data saved in the following format:
-  Four Excel files, one for each material and one for noise.
-  In each file, one sheet for each concentration, with the sheet name being the concentration in some units. The noise file has a single sheet with some arbtirary name.
-  In each sheet, the two leftmost columns contain the wavelengths and intensities, created by copying data from Thorlabs and pasting it.
-  Additionally, each sheet should have a cell with the exposure time in arbitrary units. That cell's positions should be constant across all sheets.
-  The rest of each sheet can have arbitrary data, it will be ignored.
+- Four Excel files, one for each material and one for noise.
+- In each file, one sheet for each concentration, with the sheet name being the concentration in some units. The noise file has a single sheet with some arbtirary name.
+- In each sheet, the two leftmost columns contain the wavelengths and intensities, created by copying data from Thorlabs and pasting it.
+- Additionally, each sheet should have a cell with the exposure time in arbitrary units. That cell's positions should be constant across all sheets.
+- The rest of each sheet can have arbitrary data, it will be ignored.
+
 In order to use the code, edit the following information in the file:
-  Paths to the four data files, make sure the each path is for the correct material.
-  The position of the cell with the exposure time.
-  The lists of concentrations to be excluded from the fit (seperate list for each material).
+- Paths to the four data files, make sure the each path is for the correct material.
+- The position of the cell with the exposure time.
+- The lists of concentrations to be excluded from the fit (seperate list for each material).
+
 Then, simply run the code. After approximately 10 seconds, the code will output:
-  The background intensity.
-  The fit parameters and chi squared reduced values for each material.
-  A graph of the data points, error bars and fits.
-  A graph of the residuals of each fit.
+- The background intensity.
+- The fit parameters and chi squared reduced values for each material.
+- A graph of the data points, error bars and fits.
+- A graph of the residuals of each fit.
 
 ### Code Explanation
 Here I will explain how the code processes data.
