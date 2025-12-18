@@ -21,7 +21,7 @@ In order to use the code, edit the following information in the file:
 
 Then, simply run the code. After approximately 10 seconds, the code will output:
 - The background intensity.
-- The fit parameters and chi squared reduced values for each material.
+- The fit parameters and chi squared reduced values for each material. The fit is $I=A\left(e^{-Bc}-e^{-Cc}\right)$.
 - A graph of the data points, error bars and fits.
 - A graph of the residuals of each fit.
 
@@ -38,7 +38,7 @@ The code also calculates the background intensity by the same method.
 Then, for each material:
 - The code subtracts the background intensity from the intensities calculated.
 - The code plots the points on graph 1, as error bars.
-- The code fits the points to the function $y=A\left(e^{-Bx}-e^{-Cx}\right)$, and plots the fit on graph 1.
+- The code fits the points to the function $I=A\left(e^{-Bc}-e^{-Cc}\right)$, and plots the fit on graph 1.
 - The code calculates chi squared reduced, and prints it and the fit parameters.
 - The code calculates residuals and plots them on graph 2.
 
