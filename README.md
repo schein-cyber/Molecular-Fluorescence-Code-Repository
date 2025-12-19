@@ -1,7 +1,5 @@
 # Molecular-Fluorescence-Code-Repository
-(This repository contains all code used for the Molecular Fluorescence experiment, where the Beer-Lambert law has been disprove. It contains the ----)
-
-This repository contains all the code we used to process the data from our molecular fluorescence experiment. It is designed to be usable by anyone who wishes to replicate our results.
+This repository contains all the code we used to process the data from our molecular fluorescence experiment where primary IFE was observed and the Beer-Lambert law has been disproven. It is designed to be usable by anyone who wishes to replicate our results.
 
 ## code_part1.ipynb
 The file "code_part1.ipynb" is an iPythonNotebook (JupyterNotebook) file containing the code for processing data from the first part of the experiment, where intensity is compared across concentrations.
