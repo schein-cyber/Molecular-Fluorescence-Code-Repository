@@ -26,7 +26,7 @@ Then, simply run the code. After approximately 10 seconds, the code will output:
 ### Code Explanation
 The code loops over the materials and the concentrations for each material. For some pair of material and concentration:
 - The code reads the measurment data from the correct sheet in the material's file.
-- The code integrates the intensity over the wavelength starting from 470nm to avoid effects from the 450nm source, and normalizes by the exposure time.
+- The code integrates the intensity over the wavelength starting from 470nm to avoid effects from the 455nm source, and normalizes by the exposure time.
 - The code calculates a moving average of the intensity.
 - The code integrates the absolute value of the difference between the intensity and the smoothed intensity, to calculate the fluctuation error. (The integral is also normalized by the exposure time and and a factor of 3).
 - The code saves the integrated intensities and errors.
